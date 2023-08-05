@@ -1,9 +1,10 @@
-# date:2023.07.26.20..30
+# date:2023.08.05.08..20
 
 from machine import Pin
 import time
 
 '''
+一个简单的实例
 A simple example
 
 >>>from machine import Pin
