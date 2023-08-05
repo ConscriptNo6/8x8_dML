@@ -1,4 +1,4 @@
-# date:2023.07.22.02..54
+# date:2023.08.05.08..37
 
 from machine import Pin,freq
 import time
@@ -30,9 +30,9 @@ while True:
     time.sleep(1)
     
     # 显示湿度
-    for l in range(8):
-        if l == 7:
-            dml.write_data(l+1, 0b00001111) # 最后一行后四个灯亮，表示湿度
+    for m in range(8):
+        if m == 7:
+            dml.write_data(m+1, 0b00001111) # 最后一行后四个灯亮，表示湿度
         else:
-            dml.write_data(l+1, col2[l])
+            dml.write_data(m+1, col2[m])
     time.sleep(1)
