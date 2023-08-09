@@ -17,7 +17,7 @@ def tem_hum(pin):
     return d.temperature(),d.humidity()
 
 while True:
-    tem, hum = tem_hum(4)
+    tem, hum = tem_hum(2)
     col1 = dml.num_proc(tem)
     col2 = dml.num_proc(hum)
     
